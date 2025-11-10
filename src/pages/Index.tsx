@@ -10,18 +10,18 @@ const Index = () => {
         <div className="max-w-3xl mx-auto text-center space-y-8 animate-fade-in">
           <div className="inline-block">
             <h1 className="text-7xl md:text-8xl font-extrabold mb-2 bg-gradient-to-r from-primary via-secondary to-accent bg-[length:200%_auto] animate-gradient bg-clip-text text-transparent">
-              Ваше Имя
+              Алексей
             </h1>
           </div>
           
           <p className="text-2xl md:text-3xl text-muted-foreground font-medium animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            Опишите здесь чем вы занимаетесь
+            Хожу в зал 💪
           </p>
           
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl mx-auto animate-scale-in" style={{ animationDelay: '0.4s' }}>
             <Button 
               size="lg" 
-              className="bg-gradient-to-r from-primary to-secondary hover:shadow-xl hover:scale-105 transition-all duration-300 text-lg py-8 w-full"
+              className="bg-gradient-to-r from-primary to-secondary hover:shadow-xl hover:scale-105 transition-all duration-300 text-lg py-8 w-full rounded-3xl"
               onClick={() => window.open('https://t.me/your_telegram', '_blank')}
             >
               <Icon name="Send" className="mr-2" size={24} />
@@ -30,7 +30,7 @@ const Index = () => {
             
             <Button 
               size="lg" 
-              className="bg-gradient-to-r from-pink-500 to-rose-500 hover:shadow-xl hover:scale-105 transition-all duration-300 text-lg py-8 w-full text-white"
+              className="bg-gradient-to-r from-pink-500 to-rose-500 hover:shadow-xl hover:scale-105 transition-all duration-300 text-lg py-8 w-full text-white rounded-3xl"
               onClick={() => window.open('https://www.tiktok.com/@wzfff_hook?_r=1&_t=ZP-91HZQi7Wqch', '_blank')}
             >
               <Icon name="Music" className="mr-2" size={24} />
@@ -39,12 +39,22 @@ const Index = () => {
             
             <Button 
               size="lg" 
-              className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:shadow-xl hover:scale-105 transition-all duration-300 text-lg py-8 w-full text-white"
+              className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:shadow-xl hover:scale-105 transition-all duration-300 text-lg py-8 w-full text-white rounded-3xl"
               onClick={() => window.open('https://vk.com/kwiqsy', '_blank')}
             >
               <Icon name="Share2" className="mr-2" size={24} />
               VK
             </Button>
+          </div>
+          
+          <div className="pt-8 animate-fade-in" style={{ animationDelay: '0.6s' }}>
+            <div className="bg-white/80 backdrop-blur-sm p-6 rounded-3xl max-w-sm mx-auto shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <p className="text-lg font-semibold text-foreground mb-3">💳 Поддержать</p>
+              <div className="bg-gray-100 p-4 rounded-2xl">
+                <img src="/qr-placeholder.png" alt="QR код для оплаты" className="w-48 h-48 mx-auto" />
+              </div>
+              <p className="text-sm text-muted-foreground mt-3">Отсканируйте для оплаты</p>
+            </div>
           </div>
         </div>
       </div>
