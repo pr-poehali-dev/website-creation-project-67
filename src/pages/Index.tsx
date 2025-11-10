@@ -18,50 +18,42 @@ const Index = () => {
             Опишите здесь чем вы занимаетесь
           </p>
           
-          <div className="flex flex-wrap gap-4 justify-center animate-scale-in" style={{ animationDelay: '0.4s' }}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto animate-scale-in" style={{ animationDelay: '0.4s' }}>
             <Button 
               size="lg" 
-              className="bg-gradient-to-r from-primary to-secondary hover:shadow-lg hover:scale-105 transition-all duration-300 text-lg px-8 py-6"
+              className="bg-gradient-to-r from-primary to-secondary hover:shadow-xl hover:scale-105 transition-all duration-300 text-lg py-8 w-full"
               onClick={() => window.open('https://t.me/your_telegram', '_blank')}
             >
-              <Icon name="Send" className="mr-2" size={20} />
+              <Icon name="Send" className="mr-2" size={24} />
               Telegram
             </Button>
             
             <Button 
               size="lg" 
-              variant="outline"
-              className="border-2 border-primary hover:bg-primary/10 hover:shadow-lg hover:scale-105 transition-all duration-300 text-lg px-8 py-6"
-              onClick={() => window.open('https://github.com/your_github', '_blank')}
+              className="bg-gradient-to-r from-pink-500 to-rose-500 hover:shadow-xl hover:scale-105 transition-all duration-300 text-lg py-8 w-full text-white"
+              onClick={() => window.open('https://www.tiktok.com/@your_tiktok', '_blank')}
             >
-              <Icon name="Github" className="mr-2" size={20} />
-              GitHub
+              <Icon name="Music" className="mr-2" size={24} />
+              TikTok
             </Button>
             
             <Button 
               size="lg" 
-              variant="outline"
-              className="border-2 border-accent hover:bg-accent/10 hover:shadow-lg hover:scale-105 transition-all duration-300 text-lg px-8 py-6"
-              onClick={() => window.open('mailto:your@email.com', '_blank')}
+              className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:shadow-xl hover:scale-105 transition-all duration-300 text-lg py-8 w-full text-white"
+              onClick={() => window.open('https://instagram.com/your_instagram', '_blank')}
             >
-              <Icon name="Mail" className="mr-2" size={20} />
-              Email
+              <Icon name="Instagram" className="mr-2" size={24} />
+              Instagram
             </Button>
-          </div>
-          
-          <div className="pt-8 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-            <p className="text-muted-foreground mb-4">Мои навыки</p>
-            <div className="flex flex-wrap gap-3 justify-center">
-              {['React', 'TypeScript', 'Design', 'Development'].map((skill, index) => (
-                <span 
-                  key={skill}
-                  className="px-6 py-2 bg-white/80 backdrop-blur-sm rounded-full text-sm font-medium border border-primary/20 hover:border-primary/50 hover:shadow-md transition-all duration-300"
-                  style={{ animationDelay: `${0.7 + index * 0.1}s` }}
-                >
-                  {skill}
-                </span>
-              ))}
-            </div>
+            
+            <Button 
+              size="lg" 
+              className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:shadow-xl hover:scale-105 transition-all duration-300 text-lg py-8 w-full text-white"
+              onClick={() => window.open('https://vk.com/your_vk', '_blank')}
+            >
+              <Icon name="Share2" className="mr-2" size={24} />
+              VK
+            </Button>
           </div>
         </div>
       </div>
