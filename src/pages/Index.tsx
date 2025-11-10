@@ -18,7 +18,7 @@ const Index = () => {
             Опишите здесь чем вы занимаетесь
           </p>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto animate-scale-in" style={{ animationDelay: '0.4s' }}>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl mx-auto animate-scale-in" style={{ animationDelay: '0.4s' }}>
             <Button 
               size="lg" 
               className="bg-gradient-to-r from-primary to-secondary hover:shadow-xl hover:scale-105 transition-all duration-300 text-lg py-8 w-full"
@@ -31,7 +31,7 @@ const Index = () => {
             <Button 
               size="lg" 
               className="bg-gradient-to-r from-pink-500 to-rose-500 hover:shadow-xl hover:scale-105 transition-all duration-300 text-lg py-8 w-full text-white"
-              onClick={() => window.open('https://www.tiktok.com/@your_tiktok', '_blank')}
+              onClick={() => window.open('https://www.tiktok.com/@wzfff_hook?_r=1&_t=ZP-91HZQi7Wqch', '_blank')}
             >
               <Icon name="Music" className="mr-2" size={24} />
               TikTok
@@ -39,17 +39,8 @@ const Index = () => {
             
             <Button 
               size="lg" 
-              className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:shadow-xl hover:scale-105 transition-all duration-300 text-lg py-8 w-full text-white"
-              onClick={() => window.open('https://instagram.com/your_instagram', '_blank')}
-            >
-              <Icon name="Instagram" className="mr-2" size={24} />
-              Instagram
-            </Button>
-            
-            <Button 
-              size="lg" 
               className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:shadow-xl hover:scale-105 transition-all duration-300 text-lg py-8 w-full text-white"
-              onClick={() => window.open('https://vk.com/your_vk', '_blank')}
+              onClick={() => window.open('https://vk.com/kwiqsy', '_blank')}
             >
               <Icon name="Share2" className="mr-2" size={24} />
               VK
